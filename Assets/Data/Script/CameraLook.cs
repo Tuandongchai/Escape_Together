@@ -9,6 +9,8 @@ public class CameraLook : MonoBehaviour
     private float XRotation;
     [SerializeField] private Transform PlayerBody;
     public Vector2 LockAxis;
+
+    [SerializeField] private GameObject body;
     private void Update()
     {
         XMove = LockAxis.x;
@@ -18,5 +20,6 @@ public class CameraLook : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(XRotation,0,0);
         PlayerBody.Rotate(Vector3.up * XMove);
+        
     }
 }
