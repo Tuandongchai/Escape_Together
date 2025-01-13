@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
+
+
     public FixedJoystick joystick;
     public float SpeedMove;
     private CharacterController controller;
